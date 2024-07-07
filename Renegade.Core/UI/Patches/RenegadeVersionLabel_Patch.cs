@@ -53,22 +53,9 @@ namespace Renegade.Core.UI
         public static void UpdateVersionLabel()
         {
             Traverse preloaderUiTraverse = Traverse.Create(MonoBehaviourSingleton<PreloaderUI>.Instance);
-            //if (RenegadePlugin.OfficialVersion.Value)
-            //{
-            //    Logger.LogInfo("This shit is running bad code bro, get rid of the config stuff because its the problem.");
-            //    preloaderUiTraverse.Field("string_2").SetValue($"{officialVersion} Beta version");
-            //    versionNumberTraverse.Field("Major").SetValue(officialVersion);
-            //}
-            //else
-            //{
-                preloaderUiTraverse.Field("string_2").SetValue($"RenegadeMPT BETA {renegadeVersion} | {versionLabel}");
-                versionNumberTraverse.Field("Major").SetValue($"{versionLabel} {renegadeVersion}");
-            //}
-
-            // Game mode
-            //preloaderUiTraverse.Field("string_4").SetValue("PvE");
-            // Update version label
-            //preloaderUiTraverse.Method("method_6").GetValue();
+            
+            preloaderUiTraverse.Field("string_2").SetValue($"RenegadeMPT BETA {renegadeVersion} | {versionLabel}");
+            versionNumberTraverse.Field("Major").SetValue($"{versionLabel} {renegadeVersion}");
         }
     }
 }

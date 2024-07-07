@@ -18,15 +18,15 @@ using Renegade.Core.UI;
 namespace Renegade.Core
 {
     /// <summary>
-    /// Renegade.Base Plugin. <br/> <br/>
+    /// Renegade.Core Plugin. <br/> <br/>
     /// Written by: William Whatley (Renegade_Actual/The_Apex_Legend) <br/>
-    /// Supported by: Anthony Valdez (MrGlockster) <br/>
+    /// Server hosting support by: Anthony Valdez (MrGlockster) <br/>
     /// </summary>
 
     [BepInPlugin("com.renegade.core", "Renegade.Core", "1.0.1.1")]
     [BepInProcess("EscapeFromTarkov.exe")]
-    //[BepInDependency("com.SPT.core", BepInDependency.DependencyFlags.HardDependency)] // This is used so that we guarantee to load after spt-core, that way we can disable its patches
-    //[BepInDependency("com.SPT.debugging", BepInDependency.DependencyFlags.HardDependency)]
+    //[BepInDependency("com.AKI.core", BepInDependency.DependencyFlags.HardDependency)] 
+    //[BepInDependency("com.AKI.debugging", BepInDependency.DependencyFlags.HardDependency)]
     public class RenegadePlugin : BaseUnityPlugin
     {
         public static ManualLogSource LogSource;
@@ -34,19 +34,8 @@ namespace Renegade.Core
         public static string EFTVersionMajor { get; internal set; }
         public string Locale { get; private set; } = "en";
 
-        #region config values
-
-        //Advanced
-        public static ConfigEntry<bool> OfficialVersion { get; set; }
-
-        #endregion
-
         protected void Awake()
         {
-            // Instance = this;
-
-            // GetClientConfig();
-
             new RenegadeVersionLabel_Patch().Enable();
             //new EndScreenLoadPatch().Enable();
             //new HideoutScreenLoadPatch().Enable();

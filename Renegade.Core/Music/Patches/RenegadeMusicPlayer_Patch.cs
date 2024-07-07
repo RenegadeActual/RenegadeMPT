@@ -16,6 +16,10 @@ using UnityEngine;
 using UnityEngine.Networking;
 using Random = System.Random;
 
+/// <summary>
+/// Future location for a custom music player.
+/// </summary>
+
 //namespace Renegade.Core.Music
 //{
 //    public class RenegadeMusicPlayer_Patch : ModulePatch
