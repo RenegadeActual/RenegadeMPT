@@ -33,7 +33,7 @@ namespace Renegade.Core.UI
                 versionLabel = "THIS IS THE VERSION LABEL";
             }
 
-            renegadeVersion = "1.0.1.2-alpha"; // I would like to have these varible set somewhere else
+            renegadeVersion = "1.0.1.4-alpha"; // I would like to have these varible set somewhere else
             versionLabel = "RenegadeMPT";
 
             Traverse preloaderUiTraverse = Traverse.Create(MonoBehaviourSingleton<PreloaderUI>.Instance);

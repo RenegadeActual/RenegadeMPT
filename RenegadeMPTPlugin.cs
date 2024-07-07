@@ -10,7 +10,7 @@ using Renegade.Core.UI;
 
 namespace Renegade.Core
 {
-    [BepInPlugin("com.renegade.core", "Renegade.Core", "1.0.1.2")]
+    [BepInPlugin("com.renegade.core", "Renegade.Core", "1.0.1.4")]
     [BepInProcess("EscapeFromTarkov.exe")]
     public class RenegadePlugin : BaseUnityPlugin
     {
@@ -21,7 +21,7 @@ namespace Renegade.Core
         protected void Awake() //Main function
         {
             new RenegadeVersionLabel_Patch().Enable();
-            string renegadeVersion = "1.0.1.2"; // This is already denoted in RenegadeVersionLabel_Patch.cs, I would like to have this file own it.
+            string renegadeVersion = "1.0.1.4"; // This is already denoted in RenegadeVersionLabel_Patch.cs, I would like to have this file own it.
             LogSource = Logger;
             LogSource.LogInfo($"RenegadeMod loaded! Running version: " + renegadeVersion);
         }
