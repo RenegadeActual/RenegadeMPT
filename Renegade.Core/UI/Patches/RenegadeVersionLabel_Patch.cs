@@ -12,7 +12,7 @@ namespace Renegade.Core.UI
     public class RenegadeVersionLabel_Patch : ModulePatch
     {
         /// <summary>
-        /// Originally developed by the SPT and FIKA team; RENEVATED DRASTICALLY...
+        /// Originally developed by the SPT and FIKA team; RENOVATED DRASTICALLY...
         /// </summary>
         private static string versionLabel = "RenegadeMPT";
         private static Traverse versionNumberTraverse;
