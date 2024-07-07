@@ -2,19 +2,17 @@
 using System.Reflection;
 using Aki.Reflection.Patching;
 using HarmonyLib;
-using Renegade.Core;
-using Aki.Common.Http;
-using Aki.Common.Utils;
-using Comfort.Net.Dispatching;
 
 namespace Renegade.Core.UI
 {
     public class RenegadeVersionLabel_Patch : ModulePatch
     {
         /// <summary>
-        /// Originally developed by the SPT and FIKA team; RENOVATED DRASTICALLY...
+        /// Accesses the EFT_UI to add versioning to the main menu.
+        /// Originally created by AKI and FIKA. Adapted to fit my needs
         /// </summary>
-        private static string versionLabel = "RenegadeMPT";
+   
+        private static string versionLabel;
         private static Traverse versionNumberTraverse;
         private static string renegadeVersion;
         private static string officialVersion;
@@ -35,7 +33,8 @@ namespace Renegade.Core.UI
                 versionLabel = "THIS IS THE VERSION LABEL";
             }
 
-            renegadeVersion = "1.0.1.1-alpha";
+            renegadeVersion = "1.0.1.2-alpha"; // I would like to have these varible set somewhere else
+            versionLabel = "RenegadeMPT";
 
             Traverse preloaderUiTraverse = Traverse.Create(MonoBehaviourSingleton<PreloaderUI>.Instance);
 
