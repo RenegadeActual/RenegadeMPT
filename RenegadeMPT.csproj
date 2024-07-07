@@ -47,8 +47,8 @@
   <ItemGroup>
     <Compile Include="RenegadeMPTPlugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RenegadeMusicPlayer_Patch.cs" />
-    <Compile Include="RenegadeVersionLabel_Patch.cs" />
+    <Compile Include="Renegade.Core\Music\Patches\RenegadeMusicPlayer_Patch.cs" />
+    <Compile Include="Renegade.Core\UI\Patches\RenegadeVersionLabel_Patch.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
@@ -133,4 +133,5 @@
       <HintPath>\References\Oculus.AudioManager.dll</HintPath>
     </Reference>
   </ItemGroup>
+  <ItemGroup />
 </Project>
