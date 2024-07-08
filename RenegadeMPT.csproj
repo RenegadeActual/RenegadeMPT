@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>RenegadeMPT</RootNamespace>
     <AssemblyName>RenegadeMPT</AssemblyName>
-    <version>1.0.0.1</version>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -45,6 +45,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConfigurationManagerAttributes.cs" />
+    <Compile Include="Renegade.Core\UI\Patches\TOS_Patch.cs" />
+    <Compile Include="Renegade.Core\UI\RenegadeUIUtils.cs" />
+    <Compile Include="Renegade.Core\Utils\RenegadeModHandler.cs" />
     <Compile Include="RenegadeMPTPlugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Renegade.Core\Music\Patches\RenegadeMusicPlayer_Patch.cs" />
